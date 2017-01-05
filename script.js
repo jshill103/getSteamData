@@ -60,12 +60,12 @@ fs.writeFile("./attachment.json", JSON.stringify(result), function(err) {
 }); 
 
 // create reusable transporter object using the default SMTP transport
-var transporter = nodemailer.createTransport('smtps://jshill103%40gmail.com:qwerqwer1234@smtp.gmail.com');
+var transporter = nodemailer.createTransport('smtps://@smtp.gmail.com');
 
 // setup e-mail data with unicode symbols
 var mailOptions = {
-    from: '"Jared" <jshill103@gmail.com>', // sender address
-    to: 'Jeff, jshill103@gmail.com', // jrinside1612@gmail.com', // list of receivers
+    from: '"Jared" <@gmail.com>', // sender address
+    to: 'Jeff, @gmail.com', // @gmail.com', // list of receivers
     subject: 'skin data', // Subject line
     text: 'skin data', // plaintext body
     html: '<b>Hello world ?</b>', // html body
